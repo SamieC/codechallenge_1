@@ -15,12 +15,12 @@ Git
 
 ### Installation instruction
 ```
-Git clone https://github.com/hamida-mstafa/Triangle-tracker.git
+Git clone https://github.com/SamieC/codechallenge_1.git
 
 ```
 
 # Live Link
-[Git](gh-pages link)
+https://github.com/SamieC/codechallenge_1.git
 
 ## Technologies used
 
