@@ -46,18 +46,22 @@ function calculateNetSalary(basicSalary) {
     const netSalaryFinal = `Net Salary: KES${netSalary.toFixed(2)}`;
 
 
-    return `${grossSalaryFInal}
-  \n${deductionsFinal}
-  \n${netSalaryFinal}`;
+//     return `${grossSalaryFInal}
+//   \n${deductionsFinal}
+//   \n${netSalaryFinal}`;
 }
 
 
 
-// Calculate 
-const netSalaryResult = calculateNetSalary(basicSalary);
+// // Calculate 
+// const netSalaryResult = calculateNetSalary(basicSalary);
 
-// display 
-console.log(netSalaryResult);
-println(netSalaryResult);
+// // display 
+// console.log(netSalaryResult);
+// println(netSalaryResult);
+
+document.getElementById("r1").innerHTML = grossSalaryFInal; 
+document.getElementById("r2").innerHTML = deductionsFinal; 
+document.getElementById("r3").innerHTML = netSalaryFinal; 
 
 
