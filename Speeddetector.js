@@ -1,38 +1,37 @@
-// Input USER Speed
-const speed = parseFloat(prompt("Enter car speed (km/h):"));
 
-// cREATE FUNCTION TO SET SPEED AND SET POINTS COUNTER
-function NTSAPoints(speed) {
-  //Set speed limit
+const speed = document
+  .getElementById("button")
+  .addEventListener("click", calculateSpeed);
+const licenseStatus = document.getElementById("licenseStatus");
 
+function calculateSpeed() {
+
+  const speed = document.getElementById("speed").value;
   const speedLimit = 70;
   const PointsPerKm = 5;
   let NTSAPoints = 0;
 
-  // check if the inputed speed is below the Limint
-  if (speed < speedLimit) {
-    return "Ok";
-  }
+  
+  if (speed <= speedLimit) {
+    licenseStatus.innerText = "ok";
+  } 
+    // Calculate NTSA points for exceeding speed limit
+    const OverSpeeding = speed - speedLimit; 
 
-  // Calculate NTSA points for exceeding speed limit
-  const OverSpeeding = speed - speedLimit; 
+  
 
-// floor rounds down a number to its nearest integer.
+    // floor rounds down a number to its nearest integer.
   NTSAPoints = Math.floor(OverSpeeding / PointsPerKm);
 
-//   set condition for suspending licesne
+  
+  } 
   if (NTSAPoints > 12) {
-    return "License suspended";
-  }
-  // Return the number of NTSAPoints
-  return `NTSAPoints: ${NTSAPoints}`;
-}
+    licenseStatus.innerText = "License Status: License suspended";
 
+    return `NTSAPoints: ${NTSAPoints}`
 
-// Calculation of points
-const result = NTSAPoints(speed);
-
-//Display
-console.log(result);
-
+  } 
+  
+  const result = NTSAPoints(speed);
+ 
 

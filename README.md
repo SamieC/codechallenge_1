@@ -6,6 +6,10 @@
 
 ## Description
 It's Week one code challenge showing different JS functionalities.
+
+The main page is on index.html that will lead you to the other HTML pages.
+
+
 1. For StudentGrade- This allows user to input marks and returns the subsequent Grade.
 
 2. For Speed Detector- Modeled this as NTSA checker.
@@ -17,19 +21,6 @@ This allows one to input current speed of a user and will show is speed is above
     Tax rates are shown in the code.
 
 
-
-## Installation
-You use git clone to be able to download the documents in the GitHub
-
-## Installation Requirements
-Git
-
-### Installation instruction
-```
-Git clone https://github.com/SamieC/codechallenge_1.git
-
-```
-
 # Live Link
 https://github.com/SamieC/codechallenge_1.git
 
@@ -37,6 +28,7 @@ https://github.com/SamieC/codechallenge_1.git
 
 Github
 Javascript
+HTML
 
 ## Support and contact details
 (https://github.com/SamieC)
@@ -44,3 +36,4 @@ Javascript
 ### License
 The content of this site is licensed under the MIT license
 Copyright (c) 2018
+Copyright Samson (c)2024

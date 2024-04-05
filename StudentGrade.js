@@ -1,7 +1,7 @@
 // Get User Input 
 //Ensure the data type inputed is a whole number
 
-var Marks = parseInt(prompt("What is the Students Marks?"));
+// let Marks = parseInt(prompt("What is the Students Marks?"));
 
 //create a function to attch marks to the grades
 
@@ -30,4 +30,10 @@ const grade = findGrade(Marks);
 
 // show the Grade.
 console.log ("The Student Grade is:", grade);
+
+function displayGrade(){
+    const Marks = document.getElementById('mark').value
+    const grade = findGrade(Marks);
+    document.getElementById('Result').innerHTML = `Result:${grade}`;
+ }
 

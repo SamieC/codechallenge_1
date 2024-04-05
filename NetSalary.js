@@ -9,7 +9,7 @@ function calculateNetSalary(basicSalary) {
     // Calculate NSSF deduction (Assume that it is 6% of gross salary-Employee Contribution)
     const NSSFdeduction = grossSalary * 0.06;
 
-    // NHIF deduction (fixed at 2000-Assuming SHIF fixed amount in current Govt--jk)
+    // NHIF deduction (fixed at 2000-Assuming NHIF Fixed)
     const NHIFdeduction = 2000;
 
     // Total deductions before KRA(NSSF + NHIF)
@@ -58,4 +58,6 @@ const netSalaryResult = calculateNetSalary(basicSalary);
 
 // display 
 console.log(netSalaryResult);
+println(netSalaryResult);
+
 
